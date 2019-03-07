@@ -21,7 +21,7 @@ sh "docker push tkimutai1/devops_exam:version1"
 
 stage('Deploy')
 {
-sh "docker run -d -p 6714:80/tcp"
+sh "docker run -d -p 6714:80/tcp devops_exam:version1"
 }
 
 
